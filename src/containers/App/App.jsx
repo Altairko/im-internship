@@ -1,17 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import { Greeter } from "../../components/stateless/Greeter/Greeter";
-import { GreeterFunc } from "../../components/stateless/GreeterFunc/GreeterFunc";
-import { TextHideShow } from "../../components/stateful/TextHideShow/TextHideShow";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Index } from "../Index/Index";
+import { ReactState } from "../Statefull/ReactState/ReactState";
+import { Stateless } from "../Stateless/Stateless";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <div>
-        <Greeter greeting="Рендерим текст через stateless компонент" />
-        <GreeterFunc greeting="Рендерим текст через функциональный stateless компонент" />
-        <TextHideShow text="Рендерим текст через stateful компонент" />
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Index} />
+          <Route exact path="/stateless" component={Stateless} />
+          <Route exact path="/stateful" component={ReactState} />
+        </div>
+      </Router>
     );
   }
 }
