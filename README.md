@@ -12,7 +12,7 @@
   - Компонент использующий валидацию Redux-From и Redux Store в качестве хранения информации [ссылка](https://github.com/Altairko/im-internship/blob/master/src/containers/Statefull/ValidateReduxForm/ValidateReduxForm.jsx)
 - Apollo компоненты которые в качестве источника данных используют удаленный сервер graphql
 
-В файле App.jsx можно посмотреть пример работы с React Router.
+В файле App.jsx можно посмотреть пример работы с React Router. [ссылка](https://github.com/Altairko/im-internship/blob/master/src/containers/App/App.jsx)
 
 ## Установка
 
