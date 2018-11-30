@@ -12,7 +12,7 @@ export const Index = () => (
     <Link className="react-link" to="/redux-form">
       Посмотреть компоненты с использованием redux-form
     </Link>
-    <Link className="react-link" to="/gql">
+    <Link className="react-link" to="/apollo">
       Посмотреть компоненты с использованием apollo
     </Link>
   </div>
