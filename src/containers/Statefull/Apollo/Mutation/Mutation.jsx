@@ -45,7 +45,7 @@ class Mutation extends React.PureComponent {
 
   render() {
     return (
-      <div>
+      <div className="redux-form">
         <h1>Простая форма</h1>
         <Form formSubmit={this.onFormSubmit} form={formName}>
           <div className="data">Ошибки: {JSON.stringify(this.props.errors)}</div>
