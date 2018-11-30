@@ -3,9 +3,9 @@
 ## Цель проекта
 
 Основная цель данного проекта показать основные типы компонентов, необоходимые для выполнения тестового задания.
-Компоненты разиты по следующему принципу:
+Компоненты разбиты по следующему принципу:
 
-- Stateless компоненты без внутреннего состояние
+- Stateless компоненты без внутреннего состояния
 - Statefull компоненты с внутренним состоянием:
   - Компонент использующий внутри себя React State [ссылка](https://github.com/Altairko/im-internship/blob/master/src/containers/Stateless/Stateless.jsx)
   - Компонент использующий Redux Store и React State [ссылка](https://github.com/Altairko/im-internship/blob/master/src/containers/Statefull/SimpleReduxForm/SimpleReduxForm.jsx)
