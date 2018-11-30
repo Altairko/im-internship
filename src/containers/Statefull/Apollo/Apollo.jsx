@@ -9,8 +9,5 @@ export const Apollo = () => (
     <Link className="react-link" to="/mutation">
       Посмотреть компонент с graphql Mutation
     </Link>
-    <Link className="react-link" to="/combo">
-      Посмотреть компонент с graphql Query и Mutation
-    </Link>
   </div>
 );

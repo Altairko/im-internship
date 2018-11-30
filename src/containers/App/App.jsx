@@ -14,6 +14,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloProvider } from "react-apollo";
 import { Apollo } from "../Statefull/Apollo/Apollo";
 import Query from "../Statefull/Apollo/Query/Query";
+import Mutation from "../Statefull/Apollo/Mutation/Mutation";
 
 const httpLink = createHttpLink({
   uri: "https://fakerql.com/graphql"
@@ -49,8 +50,7 @@ export default class App extends React.Component {
               <Route exact path="/redux-form" component={ReduxForm} />
               <Route exact path="/apollo" component={Apollo} />
               <Route exact path="/query" component={Query} />
-              <Route exact path="/mutation" component={Apollo} />
-              <Route exact path="/combo" component={Apollo} />
+              <Route exact path="/mutation" component={Mutation} />
             </div>
           </Router>
         </Provider>
