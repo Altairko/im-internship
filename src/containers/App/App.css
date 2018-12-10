@@ -91,3 +91,14 @@ body {
 .reset-button:focus {
   box-shadow: 0 0 10px 0 #ee4141 !important;
 }
+
+.left-space-big {
+  margin-left: 24px;
+}
+
+.error {
+  background: #ffcdd2;
+  margin: 24px;
+  padding: 24px;
+  color: #212121;
+}

@@ -15,6 +15,10 @@ import { ApolloProvider } from "react-apollo";
 import { Apollo } from "../Statefull/Apollo/Apollo";
 import Query from "../Statefull/Apollo/Query/Query";
 import Mutation from "../Statefull/Apollo/Mutation/Mutation";
+import Hoc from "../../components/stateless/Hoc/Hoc";
+import HocInjector from "../Stateless/HocInjector/HocInjector";
+import HocEnhancer from "../Statefull/HocEnhancer/HocEnhancer";
+import HocCombine from "../Stateless/HocCombine/HocCombine";
 
 const httpLink = createHttpLink({
   uri: "https://fakerql.com/graphql"
@@ -51,6 +55,10 @@ export default class App extends React.Component {
               <Route exact path="/apollo" component={Apollo} />
               <Route exact path="/query" component={Query} />
               <Route exact path="/mutation" component={Mutation} />
+              <Route exact path="/hoc" component={Hoc} />
+              <Route exact path="/hoc/injector" component={HocInjector} />
+              <Route exact path="/hoc/enhancer" component={HocEnhancer} />
+              <Route exact path="/hoc/combine" component={HocCombine} />
             </div>
           </Router>
         </Provider>

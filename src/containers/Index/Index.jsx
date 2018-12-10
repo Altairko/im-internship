@@ -15,5 +15,9 @@ export const Index = () => (
     <Link className="react-link" to="/apollo">
       Посмотреть компоненты с использованием apollo
     </Link>
+    <Link className="react-link" to="/hoc">
+      Посмотреть компоненты с использованием HOC (Higher-Order Component - компонент высшего
+      порядка)
+    </Link>
   </div>
 );
